@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Configure localhost -> 127.0.0.2 and facebook.com -> 8.8.8.8
+cp /etc/hosts /tmp/hosts.new
+sed -i 's/^127\.0\.0\.1[[:space:]]\+localhost.*/127.0.0.2\tlocalhost/' /tmp/hosts.new
+sed -i '/[[:space:]]facebook\.com$/d' /tmp/hosts.new
+echo "8.8.8.8 facebook.com" >> /tmp/hosts.new
+cp -f /tmp/hosts.new /etc/hosts
+rm -f /tmp/hosts.new
