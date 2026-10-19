@@ -7,3 +7,6 @@ A blog post explaining the full journey of a web request: DNS, TCP/IP, firewall,
 | # | File | Description |
 |---|------|-------------|
 | 0 | `0-blog_post` | Link to the published blog post |
+
+
+| 1 | `1-what_happen_when_diagram` | Link to the diagram of the request flow |
